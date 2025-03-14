@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+header {
+    padding: 15px;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+   
+}
+h1 {
+    margin-bottom: 5px;
+}
+h2 {
+    margin-top: 20px;
+}
+.detalhes, .sobre {
+    margin-bottom: 20px;
+}
+.contato {
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+.button {
+    color:black ;
+        display: inline-block;
+        padding: 10px;
+        border: black solid 1px;
+        background-color: #ffffff; 
+        text-align: center;
+        text-decoration: none;  
+}
