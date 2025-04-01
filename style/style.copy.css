@@ -1,87 +1,132 @@
 :root {
-    --main-bg-color: #f9f9f9;
-    --accent-color: #e45d3e;
-    --text-color: #333;
-    --header-color: #00aaff;
-    --button-bg-color: #e45d3e;
-    --button-text-color: white;
+    --cor-primaria: #06b6d4;
+    --cor-secundaria: #f97316;
+    --cor-texto: #4b5563;
+    --cor-fundo: #1f2937;
+    --cor-branca: #ffffff;
+    --font-titulo: 2.25rem;
+    --font-subtitulo: 1.125rem;
+    --font-secao: 1.25rem;
+    --font-peso: 700;
+    --espaco-mb: 1rem;
+    --espaco-mt: 1.5rem;
+    --padding: 8px 24px; 
+    --borda: 2px solid;
+    --borda-radius: 9999px;
+    --transicao: 0.3s;
 }
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6; 
+    color: #1f2937; 
     margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: var(--header-color);
-}
-
-.content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
-.details, .about {
-    width: 48%;
+.container {
+    max-width: 80rem; 
+    margin: 0 auto; 
+    padding: 24px; 
+    flex: 1;
 }
-
-.details h2, .about h2 {
-    color: var(--text-color);
+.text-center {
+    text-align: center; 
+    margin-bottom: 32px; 
 }
-
-
-
-.contact-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    text-decoration: none;
-    border-radius: 4px;
+.titulo-cabecalho {
+    font-size: var(--font-titulo);
+    font-weight: var(--font-peso);
+    color: var(--cor-primaria);
 }
-
-.contact-button:hover {
-    background-color: darkorange;
+.subtitulo-cabecalho {
+    font-size: var(--font-subtitulo);
 }
-
-.details, .about, {
-    padding:30px;
-    width: 33%;
+.titulo-secao {
+    font-size: var(--font-secao);
+    font-weight: var(--font-peso);
+    margin-bottom: var(--espaco-mb);
 }
-
-
-.person{
-    display:flex;
-    padding:30px;
-    width: 33%;
-   background:var(--button-bg-color);
-   align-itens:center;
-   flex-direction:column;
+.item-detalhe {
+    font-weight: var(--font-peso);
 }
-
-.info{
+.icones-sociais {
+    color: var(--cor-texto);
+}
+.botao-sobre {
+    margin-top: var(--espaco-mt);
+    padding: var(--padding);
+    border: var(--borda) var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-weight: var(--font-peso);
+    border-radius: var(--borda-radius);
+    transition: background-color var(--transicao), color var(--transicao);
+}
+.botao-sobre:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+.cartao-perfil {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    padding: 24px; 
+    border-radius: 8px; 
     text-align: center;
 }
-
-img{
-    padding: 30px;
-    border-radius: 50%;
-    margin-top: -40%;
+.imagem-perfil {
+    width: 6rem;
+    height: 6rem;
+    border-radius: var(--borda-radius);
+    margin: 0 auto var(--espaco-mb);
 }
+.rodape {
+    background-color: var(--cor-fundo);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 16px 0; 
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px; 
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.space-x-4 > * + * {
+    margin-left: 16px; 
+}
+.mt-4 {
+    margin-top: 16px; 
+}
+.icones-sociais-brancas {
+    color: var(--cor-branca);
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+<div class="flex justify-center space-x-4 mt-4">
+
+     <a class="text-white" href="#">
+      <i class="fab fa-facebook"></i>
+     </a>
+
+     <a class="text-white" href="#">
+      <i class="fab fa-twitter"></i>
+     </a>
+
+     <a class="text-white" href="#">
+      <i class="fab fa-instagram"></i>
+     </a>
+
+     <a class="text-white" href="#">
+      <i class="fab fa-linkedin"></i>
+     </a>
+
+    </div>
