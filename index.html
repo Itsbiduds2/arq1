@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-
-<header>
-    <h1>Laura Martins</h1>
-    <p>Aluna do IFSP-Campus Bragança Paulista</p>
-</header>
-
-<main>
-    <section class="detalhes">
-        <h2>Detalhes</h2>
-        <p>Nome: Laura Martins</p>
-        <p>Experiência estudantil: 17 anos</p>
-        <p>Local: Bragança Paulista - SP</p>
-    </section>
-
-    <section class="sobre">
-        <h2>Sobre mim</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit felis mi, eget accumsan diam pharetra vitae. Maecenas vel lorem lacus. Mauris risus dui, porta quis massa quis, suscipit mattis odio. Nam in luctus nulla. Pellentesque eu porta enim, id tincidunt arcu. Nam enim nibh, auctor consequat leo vitae, maximus accumsan eros. Morbi eu quam pulvinar, rutrum ipsum non, aliquet nisi. Vivamus mollis sodales sem, non scelerisque tortor elementum id. Donec cursus tort, id augue gravida, ac feugiat turpis mattis.</p>
-        <div class="contato">
-            <a href="#" class="button">Contate-me</a>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title> Perfil </title>
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="titulo-cabecalho">Perfil</h1>
+                <p class="subtitulo-cabecalho">Sou um desenvolvedor web criativo</p>
+            </div>
+            <div class="grid">
+                <div>
+                    <h2 class="titulo-secao">Detalhes</h2>
+                    <p><span class="item-detalhe">Nome:</span> Laura Martins Valentim</p>
+                    <p><span class="item-detalhe">Idade:</span> 17 anos</p>
+                    <p><span class="item-detalhe">Local:</span> Xique xique bahia, Terra</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a class="icones-sociais" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="icones-sociais" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="icones-sociais" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="titulo-secao">Sobre mim</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae molestie magna. Mauris sed tortor condimentum, dictum augue quis, varius ante. Nam gravida at ipsum eu ultrices. Morbi venenatis sed nibh dapibus tincidunt. Quisque iaculis augue nisi, nec vehicula massa sollicitudin sed. Donec tincidunt urna elit, ut sodales turpis semper id. Cras et sodales turpis, in sollicitudin massa. Suspendisse ac ante ut sapien fermentum dapibus placerat vitae massa.</p>
+                    <p class="mt-4">Imagem por <a class="text-cyan-500" href="">lugar da imagem</a></p>
+                    <button class="botao-sobre">CONTATE-ME</button>
+                </div>
+                <div class="cartao-perfil">
+                    <img alt="icon" class="imagem-perfil" height="100" src="images/icon.jpg" width="100"/>
+                    <h2 class="titulo-secao">OLÁ, EU SOU LMV</h2>
+                    <p>hit it like rom-pom-pom-pom
+                        (Get it hot) get it hot like Papa John
+                        (Make a bitch) make a bitch go on and on
+                        (It's a fem) it's a femininomenon
+                    </p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a class="icones-sociais-brancas" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="icones-sociais-brancas" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="icones-sociais-brancas" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="icones-sociais-brancas" href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Olá, eu sou nome</h2>
-        <p>Duis id dui posuere, ultricies lectus non, efficitur nisl. Nunc velit lectus, accumsan non felis ac, commodo accumsan elit. Integer vestibulum elementum sem.</p>
-    </section>
-</main>
-
-<footer>
-    <p>Direitos Reservados</p>
-</footer>
-
-</body>
+        <footer class="rodape">
+            <p>Morbi non lacus sapien. Donec ornare eros ipsum, finibus gravida felis tincidunt ut. </p>
+        </footer>
+    </body>
 </html>
