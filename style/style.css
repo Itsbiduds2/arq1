@@ -53,7 +53,7 @@ body {
 .icones-sociais {
     color: var(--cor-texto);
 }
-.botao-sobre {
+.botao-contato, .botao-sobre {
     margin-top: var(--espaco-mt);
     padding: var(--padding);
     border: var(--borda) var(--cor-secundaria);
@@ -62,7 +62,12 @@ body {
     border-radius: var(--borda-radius);
     transition: background-color var(--transicao), color var(--transicao);
 }
-.botao-sobre:hover {
+
+.botao-sobre{
+    max-width: 140px;
+    margin: 30px;
+}
+.botao-contato:hover, .botao-sobre:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-branca);
 }
@@ -105,8 +110,30 @@ body {
 .icones-sociais-brancas {
     color: var(--cor-branca);
 }
+
+
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 1fr); 
     }
+}
+
+body.dark-mode {
+    background-color: var(--cor-fundo); 
+    color: #f3f4f6; 
+}
+
+.cartao-perfil.dark-mode {
+    background-color:  var(--cor-secundaria);
+}
+body.dark-mode a.text-cyan-500 {
+    color: var(--cor-branca); 
+}
+
+body.dark-mode a.icones-sociais{
+    color: var(--cor-branca);
+}
+
+body.dark-mode .rodape{
+    background-color: var(--cor-primaria);
 }
